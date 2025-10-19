@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rest-api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rest_api?userTimezone=true&serverTimezone=UTC
+    username: root
+    password: 2!TDYqb%230S
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      show-sql: false
+    open-in-view: false
