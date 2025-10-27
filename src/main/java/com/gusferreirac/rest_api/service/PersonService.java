@@ -1,10 +1,7 @@
 package com.gusferreirac.rest_api.service;
 
-import com.gusferreirac.rest_api.controller.TestLogController;
-import com.gusferreirac.rest_api.data.dto.v1.PersonDTO;
-import com.gusferreirac.rest_api.data.dto.v2.PersonDTOv2;
+import com.gusferreirac.rest_api.data.dto.PersonDTO;
 import com.gusferreirac.rest_api.exception.ResourceNotFoundException;
-import com.gusferreirac.rest_api.mapper.custom.PersonMapper;
 import com.gusferreirac.rest_api.model.Person;
 import com.gusferreirac.rest_api.repository.PersonRepository;
 import org.slf4j.Logger;
@@ -13,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 import static com.gusferreirac.rest_api.mapper.ObjectMapper.parseListObjects;
 import static com.gusferreirac.rest_api.mapper.ObjectMapper.parseObject;
@@ -21,10 +17,7 @@ import static com.gusferreirac.rest_api.mapper.ObjectMapper.parseObject;
 @Service
 public class PersonService {
 
-    private Logger logger = LoggerFactory.getLogger(TestLogController.class.getName());
-    @Autowired
-    private PersonMapper mapper;
-
+    private Logger logger = LoggerFactory.getLogger(PersonService.class.getName());
     @Autowired
     PersonRepository repository;
 
@@ -51,15 +44,6 @@ public class PersonService {
 
         var entity = parseObject(person, Person.class);
         return parseObject(repository.save(entity), PersonDTO.class);
-    }
-
-    public PersonDTOv2 createV2(PersonDTOv2 person) {
-
-        logger.info("Creating one Person V2!");
-
-        var entity = mapper.convertDTOToEntity(person);
-
-        return mapper.convertEntityToDTO(repository.save(entity));
     }
 
     public PersonDTO update(PersonDTO person) {

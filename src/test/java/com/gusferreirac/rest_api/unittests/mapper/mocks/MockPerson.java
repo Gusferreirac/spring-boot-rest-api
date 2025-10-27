@@ -1,6 +1,6 @@
 package com.gusferreirac.rest_api.unittests.mapper.mocks;
 
-import com.gusferreirac.rest_api.data.dto.v1.PersonDTO;
+import com.gusferreirac.rest_api.data.dto.PersonDTO;
 import com.gusferreirac.rest_api.model.Person;
 
 import java.util.ArrayList;

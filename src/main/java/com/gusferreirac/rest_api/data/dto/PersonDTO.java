@@ -1,4 +1,4 @@
-package com.gusferreirac.rest_api.data.dto.v1;
+package com.gusferreirac.rest_api.data.dto;
 
 
 import java.io.Serializable;
