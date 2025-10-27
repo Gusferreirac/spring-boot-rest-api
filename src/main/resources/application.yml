@@ -8,7 +8,13 @@ spring:
     password: 2!TDYqb%230S
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     properties:
       show-sql: false
     open-in-view: false
+  devtools:
+    add-properties: false
+logging:
+  level:
+    #root: DEBUG
+    com.gusferreirac.rest_api: DEBUG

@@ -1,0 +1,1 @@
+INSERT INTO `person` VALUES (1,'Belo Horizonte','Gustavo','Male','Custódio'),(2,'Belo Horizonte','Guilherme','Male','Custódio'),(5,'Rio de Janeiro','Nego','Male','Ney'),(6,'Divinopolis','Mary','Male','Lids'),(7,'Divinopolis','Geraldo','Male','Custodio'),(8,'Contagem','Cesar','Male','Custodio');
