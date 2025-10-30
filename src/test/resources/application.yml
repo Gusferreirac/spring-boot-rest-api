@@ -1,11 +1,10 @@
+server:
+  port: 8888
 spring:
   application:
     name: rest-api
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/rest_api?userTimezone=true&serverTimezone=UTC
-    username: root
-    password: 2!TDYqb%230S
   jpa:
     hibernate:
       ddl-auto: none
@@ -16,7 +15,7 @@ spring:
     add-properties: false
 logging:
   level:
-    #root: WARN
+    #root: DEBUG
     com.gusferreirac.rest_api: DEBUG
 
 spring-doc:

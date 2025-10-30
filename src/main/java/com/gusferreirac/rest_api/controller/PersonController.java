@@ -2,7 +2,7 @@ package com.gusferreirac.rest_api.controller;
 
 import com.gusferreirac.rest_api.controller.docs.PersonControllerDocs;
 import com.gusferreirac.rest_api.data.dto.PersonDTO;
-import com.gusferreirac.rest_api.service.PersonService;
+import com.gusferreirac.rest_api.unittests.service.PersonService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

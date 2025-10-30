@@ -1,4 +1,4 @@
-package com.gusferreirac.rest_api.service;
+package com.gusferreirac.rest_api.unittests.service;
 
 import com.gusferreirac.rest_api.controller.PersonController;
 import com.gusferreirac.rest_api.data.dto.PersonDTO;

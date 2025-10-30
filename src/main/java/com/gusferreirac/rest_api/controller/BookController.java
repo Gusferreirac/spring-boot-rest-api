@@ -2,7 +2,7 @@ package com.gusferreirac.rest_api.controller;
 
 import com.gusferreirac.rest_api.controller.docs.BookControllerDocs;
 import com.gusferreirac.rest_api.data.dto.BookDTO;
-import com.gusferreirac.rest_api.service.BookService;
+import com.gusferreirac.rest_api.unittests.service.BookService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
